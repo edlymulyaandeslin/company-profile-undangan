@@ -72,7 +72,7 @@
                 <div class="mb-3">
                     <label for="masa_aktif" class="form-label">Masa Aktif</label>
                     <input type="number" class="form-control @error('masa_aktif') is-invalid @enderror" name="masa_aktif"
-                        placeholder="/Hari" value="{{ old('masa_aktif') }}">
+                        placeholder="Tanpa masa aktif" value="{{ old('masa_aktif') }}" disabled>
                     @error('masa_aktif')
                         <p class="text-danger">{{ $message }}</p>
                     @enderror

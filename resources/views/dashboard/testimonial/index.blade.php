@@ -1,9 +1,6 @@
 @extends('dashboard.layouts.main')
 
 @section('content')
-    @extends('dashboard.layouts.main')
-
-@section('content')
     <div class="m-2">
 
         <div class="content-header">
@@ -68,6 +65,4 @@
             </div>
         </div>
     </div>
-@endsection
-
 @endsection

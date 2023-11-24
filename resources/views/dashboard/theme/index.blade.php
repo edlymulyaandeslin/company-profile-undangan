@@ -31,6 +31,8 @@
                         <tr>
                             <th scope="col">No</th>
                             <th scope="col">Tema</th>
+                            <th scope="col">Kategori</th>
+                            <th scope="col">Image</th>
                             <th scope="col">Aksi</th>
                         </tr>
                     </thead>
@@ -40,6 +42,10 @@
                             <tr>
                                 <th scope="row">{{ $loop->iteration }}</th>
                                 <td>{{ $tema->name }}</td>
+                                <td>{{ $tema->category->name }}</td>
+                                <td>
+                                    <img src="{{ asset('storage/' . $tema->image) }}" width="60px" alt="noImg">
+                                </td>
                                 <td>
                                     <a href="/dashboard/theme/{{ $tema->id }}/edit"
                                         class="btn btn-sm btn-warning">Ubah</a> |

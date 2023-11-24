@@ -17,8 +17,10 @@ class ThemeFactory extends Factory
     public function definition(): array
     {
         return [
+            'category_id' => mt_rand(1, 5),
             'name' => fake()->name(),
-            'link' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque culpa doloremque in, impedit fuga explicabo pariatur eos amet, velit eius adipisci dolores, excepturi eum cum magni. Architecto labore asperiores doloremque.'
+            'link' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque culpa doloremque in, impedit fuga explicabo pariatur eos amet, velit eius adipisci dolores, excepturi eum cum magni. Architecto labore asperiores doloremque.',
+            'image' => 'explicabo pariatur eos amet, velit eius adipisci dolores, excepturi eum cum magni. Architecto labore asperiores doloremque'
         ];
     }
 }

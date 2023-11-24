@@ -1,6 +1,6 @@
      <!-- Main Footer -->
      <footer class="main-footer">
-         <strong>Copyright &copy; 2023-2024 <a href="#">TeamPku</a>.</strong>
+         <strong>Copyright &copy; 2023-2024 <a href="#">CV Visual Software</a>.</strong>
          All rights reserved.
          {{-- <div class="float-right d-none d-sm-inline-block">
              <b>Version</b> 3.2.0
@@ -11,7 +11,7 @@
 
      <!-- REQUIRED SCRIPTS -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
-                                   "></script>
+                                        "></script>
      <!-- jQuery -->
      <script src="{{ asset('adminLTE') }}/plugins/jquery/jquery.min.js"></script>
      <!-- Bootstrap -->

@@ -18,7 +18,6 @@ return new class extends Migration
             $table->integer('jumlah_tamu');
             $table->integer('jumlah_foto');
             $table->integer('jumlah_vidio');
-            $table->string('masa_aktif');
             $table->timestamps();
         });
     }

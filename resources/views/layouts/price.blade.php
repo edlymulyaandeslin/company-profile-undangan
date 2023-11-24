@@ -41,7 +41,7 @@
                                     @else
                                         <ul class="list-unstyled li-space-lg">
                                             <li>Akses Seluruh Tema</li>
-                                            <li>{{ $paket->jumlah_tamu }} Penerima</li>
+                                            <li>{{ $paket->jumlah_tamu }} Tamu</li>
                                             <li>{{ $paket->jumlah_foto }} Foto</li>
                                             <li>{{ $paket->jumlah_vidio }} Vidio</li>
                                             <li>Profile</li>
@@ -56,7 +56,7 @@
                                         </ul>
                                     @endif
                                     <div class="price">Rp{{ $paket->price }}</div>
-                                    <a href="#" class="btn-solid-reg">Pilih Paket
+                                    <a href="#theme" class="btn-solid-reg">Pilih Paket
                                         {{ $paket->category->name }}</a>
                                 </div>
                             </div>

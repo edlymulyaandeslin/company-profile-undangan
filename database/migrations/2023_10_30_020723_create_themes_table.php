@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('themes', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('category_id');
             $table->string('name');
             $table->string('link');
+            $table->string('image');
             $table->timestamps();
         });
     }

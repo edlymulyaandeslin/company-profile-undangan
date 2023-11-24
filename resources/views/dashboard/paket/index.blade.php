@@ -18,7 +18,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-10 mx-2">
+            <div class="col-md-11 mx-2">
 
                 @if (session()->has('success'))
                     <div class="alert alert-success" role="alert">
@@ -51,7 +51,7 @@
                                 <td>{{ $paket->jumlah_tamu }} orang</td>
                                 <td>{{ $paket->jumlah_foto }} pcs</td>
                                 <td>{{ $paket->jumlah_vidio }} pcs</td>
-                                <td>{{ $paket->masa_aktif }} hari</td>
+                                <td>Tanpa Masa Aktif</td>
                                 <td>
                                     <a href="/dashboard/paket/{{ $paket->id }}/edit"
                                         class="btn btn-sm btn-warning">Ubah</a> |

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Theme;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ThemeController extends Controller
 {
@@ -24,7 +26,8 @@ class ThemeController extends Controller
     public function create()
     {
         return view('dashboard.theme.create', [
-            'title' => 'Theme | Create'
+            'title' => 'Theme | Create',
+            'categories' => Category::all()
         ]);
     }
 
@@ -35,9 +38,14 @@ class ThemeController extends Controller
     {
         $validateData = $request->validate([
             'name' => 'required',
+            'category_id' => 'required',
+            'image' => 'required|image|file|max:1024',
             'link' => 'required|url'
         ]);
 
+        if ($request->file('image')) {
+            $validateData['image'] = $request->file('image')->store('post-image');
+        }
         Theme::create($validateData);
 
         return redirect('/dashboard/theme')->with('success', 'Tema baru berhasil ditambahkan!');
@@ -58,7 +66,8 @@ class ThemeController extends Controller
     {
         return view('dashboard.theme.edit', [
             'title' => 'Theme | Edit',
-            'theme' => Theme::find($id)
+            'theme' => Theme::find($id),
+            'categories' => Category::all()
         ]);
     }
 
@@ -69,8 +78,19 @@ class ThemeController extends Controller
     {
         $validateData = $request->validate([
             'name' => 'required',
+            'category_id' => 'required',
+            'image' => 'image|file|max:1024',
             'link' => 'required|url'
         ]);
+
+        if ($request->file('image')) {
+
+            if ($request->oldImage) {
+                Storage::delete($request->oldImage);
+            }
+
+            $validateData['image'] = $request->file('image')->store('post-image');
+        }
 
         Theme::where('id', $id)->update($validateData);
 

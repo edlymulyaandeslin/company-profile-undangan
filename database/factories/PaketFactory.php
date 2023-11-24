@@ -22,7 +22,6 @@ class PaketFactory extends Factory
             'jumlah_tamu' => fake()->numberBetween(1, 100),
             'jumlah_foto' => fake()->numberBetween(1, 100),
             'jumlah_vidio' => fake()->numberBetween(1, 100),
-            'masa_aktif' => fake()->numberBetween(1, 365),
         ];
     }
 }

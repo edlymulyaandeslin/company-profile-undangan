@@ -41,7 +41,7 @@ class PaketController extends Controller
             'jumlah_tamu' => 'required|max:4',
             'jumlah_foto' => 'required|max:3',
             'jumlah_vidio' => 'required|max:3',
-            'masa_aktif' => 'required|max:3'
+            'masa_aktif' => 'max:3'
         ]);
 
         Paket::create($validateData);
@@ -81,7 +81,7 @@ class PaketController extends Controller
             'jumlah_tamu' => 'required|max:4',
             'jumlah_foto' => 'required|max:3',
             'jumlah_vidio' => 'required|max:3',
-            'masa_aktif' => 'required|max:3'
+            'masa_aktif' => 'max:3'
         ]);
 
         Paket::where('id', $id)->update($validateData);

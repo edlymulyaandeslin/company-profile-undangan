@@ -20,8 +20,9 @@
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">Cukup register, kemudian isi form wizard yang telah kami
-                                        sediakan, daftarkan tamu spesialmu dan bagiakan undangan.</div>
+                                    <div class="accordion-body">Cukup pilih paket yang di inginkan dan melakukan
+                                        pembayaran,lalu kami akan mengurusnya dan kamu tinggal terima
+                                        beres.</div>
                                 </div>
                             </div>
                             <!-- end of accordion-item -->
@@ -35,9 +36,10 @@
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">Klik Buat Undangan isi subdomain, email dan password,
-                                        verifikasi email kemudian isi semua informasi acara! Apabila masih kurang jelas,
-                                        lihat video tutorial penggunaan datengdong!</div>
+                                    <div class="accordion-body">Kunjungi website undangan kita lalu scroll ke pilihan
+                                        paket, pilih paket yang tersedia, pilih tema, kemudian kamu akan diarahkan
+                                        whatsapp admin
+                                    </div>
                                 </div>
                             </div>
                             <!-- end of accordion-item -->
