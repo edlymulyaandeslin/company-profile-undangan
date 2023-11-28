@@ -4,8 +4,8 @@
 
         <!-- Image Logo -->
         <a class="navbar-brand text-decoration-none" href="/"
-            style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"><img
-                src="img/icon2.png" width="65px" alt="alternative">UndanganKita</a>
+            style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: #686de0"><img
+                src="img/icon2.png" width="65px" style="border: 1px solid white; border-radius: 50%" alt="alternative"> UndanganKita</a>
 
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <!-- <a class="navbar-brand logo-text" href="index.html">Ioniq</a> -->
