@@ -40,6 +40,14 @@
         {{-- boostrap --}}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+            rel="stylesheet">
+        <link href="{{ asset('ioniq') }}/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ asset('ioniq') }}/css/fontawesome-all.min.css" rel="stylesheet">
+        <link href="{{ asset('ioniq') }}/css/swiper.css" rel="stylesheet">
+        <link href="{{ asset('ioniq') }}/css/styles.css" rel="stylesheet">
+
         <!-- Favicon  -->
         <link rel="icon" href="images/favicon.png">
     </head>
@@ -53,7 +61,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-10 offset-xl-1">
-                        <h1 class="text-center">Log In Admin</h1>
+                        <h1 class="text-center text-white">Log In Admin</h1>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -66,8 +74,7 @@
                 <div class="row">
                     <div class="col-xl-6 offset-xl-3">
                         <div class="text-box mt-5 mb-5">
-                            {{-- <p class="mb-4">You don't have a password? Then please <a class="blue"
-                                    href="#">Sign Up</a></p> --}}
+
                             @if (session()->has('loginError'))
                                 <div class="alert alert-danger" role="alert">
                                     {{ session('loginError') }}
@@ -80,8 +87,7 @@
                                 <div class="mb-4 form-floating">
                                     <input type="email"
                                         class="form-control @error('email')
-                                        is-invalid
-                                    @enderror"
+                                        is-invalid @enderror"
                                         name="email" placeholder="Masukkan email" value="{{ old('email') }}">
                                     <label for="email">Email address</label>
                                     @error('email')
@@ -113,21 +119,6 @@
         <!-- end of basic -->
 
         @include('partials.footer')
-
-        <!-- Copyright -->
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p class="p-small">Copyright © <a href="#your-link">2023 - 2024</a></p>
-                    </div> <!-- end of col -->
-                    <div class="col-lg-6">
-                        <p class="p-small">Created By<a href="#"> CV Visual Software</a></p>
-                    </div> <!-- end of col -->
-                </div> <!-- enf of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of copyright -->
-        <!-- end of copyright -->
 
         <!-- Back To Top Button -->
         <button onclick="topFunction()" id="myBtn">

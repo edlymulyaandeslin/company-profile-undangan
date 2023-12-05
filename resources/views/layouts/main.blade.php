@@ -199,22 +199,6 @@
 
         @include('partials.footer')
 
-        <!-- Copyright -->
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p class="p-small">Copyright © 2023 - 2024</p>
-                    </div> <!-- end of col -->
-
-                    <div class="col-lg-6">
-                        <p class="p-small">Created by <a href="#"> CV Visual Software</a></p>
-                    </div> <!-- end of col -->
-                </div> <!-- enf of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of copyright -->
-        <!-- end of copyright -->
-
         <!-- Back To Top Button -->
         <button onclick="topFunction()" id="myBtn">
             <img src="{{ asset('ioniq') }}/images/up-arrow.png" alt="alternative">
